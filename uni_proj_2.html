@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Karr Kei | Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    </head>
+
+    <body>
+        <div >
+            <!--Menu-->
+            <div class="nav-menu">
+                <a href="index.html">Home</a>
+                <div class="dropdown active">
+                    <button class="dropbtn">University Projects
+                      <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="uni_proj_1.html">Facial Expression Transfer Model</a>
+                        <a class="active" href="uni_proj_2.html">Big Data Management and Processing</a>
+                        <a href="uni_proj_3.html">Asteroids</a>
+                        <a href="uni_proj_4.html">Data Visualisations</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                <button class="dropbtn">Other Projects
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    
+                </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="container">
+            <h1>Project 2</h1>
+            <h2>Big Data Management and Processing: Processing Data Stream for Streaming and Static Data Visualisation</h2>
+            <p class="descrip">In Year 3, I had simulated real-time streaming of climate and hotspot data using real-life 
+              <a href="https://sentinel.ga.gov.au/#/">fire</a> and <a href="http://www.bom.gov.au/vic/?ref=hdr">weather</a> data. 
+              This was done by implementing multiple Apache Kafka producers to simulate the real-time streaming of data which is then processed by 
+                Apache Spark Streaming client and then inserted into MongoDB. Full specifications of the project can be found
+                <a href="https://karrkei.github.io/portfolio/data/specs.pdf">here</a> (All rights belong to Monash University). 
+                I then performed two types of data visualisations, streaming and static data visualisations.
+              </p>
+        
+              <p>1. Streaming data visualisation using Matplotlib</p>
+              <div class="gifs3">
+                  <img src="https://karrkei.github.io/portfolio/data/stream_vis.gif" width ="800" height ="500"alt="Stream Visualisation">
+              </div>
+        
+              <p>2. Static data visualisation using Matplotlib </p>
+              <div class="gifs3">
+                  <img src="https://karrkei.github.io/portfolio/data/bar_vis.png" width ="800" height ="500" alt="Bar chart">
+              </div>
+        
+              <p>3. Static data visualisation using Folium </p>
+              <div class="gifs3">
+                  <img src="https://karrkei.github.io/portfolio/data/map_vis.gif" width ="800" height ="500" alt="Map">
+              </div>
+              
+              <p class="descrip">View my GitHub repository with all Juputer Notebooks <a href="https://github.com/karrkei/bigdata">here</a>.</p>
+
+        </div>
+
+    </body>
+</html>
