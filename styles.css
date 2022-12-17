@@ -1,18 +1,15 @@
 body { 
     min-width: 980px; 
-    background-color: #F6F5F0; 
+    background-color: #f2efdf; 
 }
 
-#wrapper { 
-    width: 980px; margin: 0 auto; text-align: left; 
-}
 
 *{
     font-family: 'Source Sans Pro', sans-serif;
   }
 
 .container{
-    padding-top: 30px;
+    padding: 30px;
     width: 1200px;
     background-color: #F6F5F0; 
     text-align: center;
