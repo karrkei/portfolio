@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Bingo</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+        <div classs="container">
+            <!--Bingo table-->
+            <table>
+                <tr>
+                    <th id="0">B</th>
+                    <th id="1">I</th>
+                    <th id="2">N</th>
+                    <th id="3">G</th>
+                    <th id="4">O</th>
+                </tr>
+                <tr id="r1">
+                    <td id="r1c1" onClick=mark(id) class="unmarked"></td>
+                    <td id="r1c2" onClick=mark(id) class="unmarked"></td>
+                    <td id="r1c3" onClick=mark(id) class="unmarked"></td>
+                    <td id="r1c4" onClick=mark(id) class="unmarked"></td>
+                    <td id="r1c5" onClick=mark(id) class="unmarked"></td>
+                </tr>
+                <tr id="r2">
+                    <td id="r2c1" onClick=mark(id) class="unmarked"></td>
+                    <td id="r2c2" onClick=mark(id) class="unmarked"></td>
+                    <td id="r2c3" onClick=mark(id) class="unmarked"></td>
+                    <td id="r2c4" onClick=mark(id) class="unmarked"></td>
+                    <td id="r2c5" onClick=mark(id) class="unmarked"></td>
+                </tr>
+                <tr id="r3">
+                    <td id="r3c1" onClick=mark(id) class="unmarked"></td>
+                    <td id="r3c2" onClick=mark(id) class="unmarked"></td>
+                    <td id="r3c3" class="marked">✖</td>
+                    <td id="r3c4" onClick=mark(id) class="unmarked"></td>
+                    <td id="r3c5" onClick=mark(id) class="unmarked"></td>
+                </tr>
+                <tr id="r4">
+                    <td id="r4c1" onClick=mark(id) class="unmarked"></td>
+                    <td id="r4c2" onClick=mark(id) class="unmarked"></td>
+                    <td id="r4c3" onClick=mark(id) class="unmarked"></td>
+                    <td id="r4c4" onClick=mark(id) class="unmarked"></td>
+                    <td id="r4c5" onClick=mark(id) class="unmarked"></td>
+                </tr>
+                <tr id="r5">
+                    <td id="r5c1" onClick=mark(id) class="unmarked"></td>
+                    <td id="r5c2" onClick=mark(id) class="unmarked"></td>
+                    <td id="r5c3" onClick=mark(id) class="unmarked"></td>
+                    <td id="r5c4" onClick=mark(id) class="unmarked"></td>
+                    <td id="r5c5" onClick=mark(id) class="unmarked"></td>
+                </tr>
+            </table>
+            <!--Number-->
+            <div>
+                <p id="number">Click Button to Generate</p>
+            </div>
+            <!--Bingo-->
+            <div class="buttons">
+                <button id="restart-btn" type="button" onClick="restart()">Restart</button>
+                <button id="clear-btn" type="button" onClick="clearAll()">Clear All</button>
+                <button id="bingo-btn" type="button" onClick="bingo()">Bingo!</button>
+                <button id="gen-btn" type="button" onClick="genNumber()">Generate</button>
+            </div>
+
+            <!--Text-->
+            <div>
+                <p id="text-box"></p>
+            </div>
+
+            <!--Generated so far-->
+            <div class="nums-box">
+                <p id="gen-nums"></p>
+            </div>
+        </div>
+
+        <div class="instructions-center">
+            <div class="instructions-vals">
+                <h1>How to play:</h1>
+                <p>1. Click on 'Generate' to generate a number. </p>
+                <p>2. Click on card to highlight number. </p>
+                <p>3. Click on 'Bingo!' if you think you have won.</p>
+                <p>4. Click on 'Clear All' to clear card.</p>
+                <p>5. Click on 'Restart' to restart game.</p>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>

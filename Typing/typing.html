@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Typing Game</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+        <div class="container">
+            <button onClick=startGame()>New Game</button>
+            <button onClick=endGame()>End Game</button>
+
+            <!--Textbox-->
+            <div class="text-container" id="text-container">
+                <p id="text"></p>
+            </div>
+
+            <!--Statistic box-->
+            <div class="statistics-container" id = "statistics-container">
+                <div class="statistics"> 
+                    <p>Correct: <span id="correct">0</span></p>
+                    <p>Wrong: <span id="wrong">0</span></p>
+                    <p id="time">Time elapsed: <span id="seconds">00</span>.<span id="ms">000</span></p>
+                    <p>Speed: <span id="speed">0</span></p>
+                    <p>Accuracy: <span id="accuracy">0</span></p>
+                </div>
+            </div>
+
+            <!--Keyboard-->
+            <div class="keyboard-container" id="keyboard-container">
+                <div class="keyboard">
+                    <div class="keys" id="q">Q</div>
+                    <div class="keys" id="w">W</div>
+                    <div class="keys" id="e">E</div>
+                    <div class="keys" id="r">R</div>
+                    <div class="keys" id="t">T</div>
+                    <div class="keys" id="y">Y</div>
+                    <div class="keys" id="u">U</div>
+                    <div class="keys" id="i">I</div>
+                    <div class="keys" id="o">O</div>
+                    <div class="keys" id="p">P</div>
+                </div>
+                <div class="keyboard">
+                    <div class="keys" id="a">A</div>
+                    <div class="keys" id="s">S</div>
+                    <div class="keys" id="d">D</div>
+                    <div class="keys" id="f">F</div>
+                    <div class="keys" id="g">G</div>
+                    <div class="keys" id="h">H</div>
+                    <div class="keys" id="j">J</div>
+                    <div class="keys" id="k">K</div>
+                    <div class="keys" id="l">L</div>
+                </div>
+                <div class="keyboard">
+                    <div class="keys" id="z">Z</div>
+                    <div class="keys" id="x">X</div>
+                    <div class="keys" id="c">C</div>
+                    <div class="keys" id="v">V</div>
+                    <div class="keys" id="b">B</div>
+                    <div class="keys" id="n">N</div>
+                    <div class="keys" id="m">M</div>
+                   
+                </div>
+
+            </div>
+        </div>
+        <div class="instructions-center">
+            <div class="instructions-vals">
+                <h1>How to play:</h1>
+                <p>1. Click on 'New Game' to start. </p>
+                <p>2. Type displayed characters on keyboard. </p>
+                <p>3. Click on 'End Game' to stop and view stats.</p>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
